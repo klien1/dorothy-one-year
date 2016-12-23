@@ -79,14 +79,14 @@ document.addEventListener("DOMContentLoaded", function() {
 			$("#right")
 				.attr("src", images["dorothy_selfie_dark_lips"])
 				.fadeIn(2000)
-				.attr("class", "animated bounceInLeft")
+				.attr("class", "animated bounceInUp")
 				.css("-webkit-animation-duration", "4s")
 				.css("-webkit-animation-delay", "1s");
 
 			$("#left")
 				.attr("src", images["dorothy_selfie_no_makeup"])
 				.fadeIn(2000)
-				.attr("class", "animated bounceInRight")
+				.attr("class", "animated bounceInUp")
 				.css("-webkit-animation-duration", "4s")
 				.css("-webkit-animation-delay", "2s");
 
@@ -98,10 +98,10 @@ document.addEventListener("DOMContentLoaded", function() {
 				.css("-webkit-animation-delay", "5s");
 		},
 		onEnd: function() {
-			$("#left").attr("class", "animated fadeOutLeft")
+			$("#left").attr("class", "animated fadeOutUp")
 				.css("-webkit-animation-duration", "3s")
 				.css("-webkit-animation-delay", "1s");
-			$("#right").attr("class", "animated fadeOutRight")
+			$("#right").attr("class", "animated fadeOutUp")
 				.css("-webkit-animation-duration", "3s")
 				.css("-webkit-animation-delay", "1s");
 			$("#middle").attr("class", "animated fadeOutDown")
@@ -115,7 +115,8 @@ document.addEventListener("DOMContentLoaded", function() {
 			$("#left").fadeOut();
 			$("#right").fadeOut();
 			$("#middle").fadeOut();
-			$("#center").fadeIn(2000).attr("src", images["dorothy_selfie"])
+			$("#center").fadeIn(2000)
+				.attr("src", images["dorothy_selfie"])
 				.attr("class", "animated rotateIn")
 				.css("-webkit-animation-duration", "2s")
 				.css("-webkit-animation-delay", "1s")
@@ -271,17 +272,16 @@ document.addEventListener("DOMContentLoaded", function() {
 				.attr("src", images["spicy_noodle"])
 				.css("width", "")
 				.css("height", "")
-				.attr("class", "animated fadeInLeft")
+				.attr("class", "animated fadeInRight")
 				.css("-webkit-animation-duration", "6s")
 				.css("-webkit-animation-delay", "7s");
 			$("#right")
 				.attr("src", images["on_couch_faces"])
 				.css("width", "")
 				.css("height", "")
-				.attr("class", "animated fadeInRight")
+				.attr("class", "animated fadeInLeft")
 				.css("-webkit-animation-duration", "6s")
 				.css("-webkit-animation-delay", "7s");
-
 		},
 		onEnd: function () {
 			$("#middle")
@@ -289,11 +289,11 @@ document.addEventListener("DOMContentLoaded", function() {
 				.css("-webkit-animation-duration", "2s")
 				.css("-webkit-animation-delay", "1s");
 			$("#left")
-				.attr("class", "animated fadeOutLeft")
+				.attr("class", "animated fadeOutRight")
 				.css("-webkit-animation-duration", "2s")
 				.css("-webkit-animation-delay", "1s");
 			$("#right")
-				.attr("class", "animated fadeOutRight")
+				.attr("class", "animated fadeOutLeft")
 				.css("-webkit-animation-duration", "2s")
 				.css("-webkit-animation-delay", "1s");
 		}
@@ -376,26 +376,26 @@ document.addEventListener("DOMContentLoaded", function() {
 				.css("-webkit-animation-delay", "1s");
 			$("#left")
 				.attr("src", images["wedding_didi"])
-				.attr("class", "animated lightSpeedIn")
+				.attr("class", "animated fadeInDown")
 				.css("-webkit-animation-duration", "2s")
 				.css("-webkit-animation-delay", "6s");
 			$("#right")
 				.attr("src", images["wedding_me"])
-				.attr("class", "animated lightSpeedIn")
+				.attr("class", "animated fadeInDown")
 				.css("-webkit-animation-duration", "2s")
 				.css("-webkit-animation-delay", "6s");
 		},
 		onEnd: function () {
 			$("#middle")
-				.attr("class", "animated lightSpeedOut")
+				.attr("class", "animated fadeOut")
 				.css("-webkit-animation-duration", "2s")
 				.css("-webkit-animation-delay", "1s");
 			$("#left")
-				.attr("class", "animated lightSpeedOut")
+				.attr("class", "animated fadeOut")
 				.css("-webkit-animation-duration", "2s")
 				.css("-webkit-animation-delay", "1s");
 			$("#right")
-				.attr("class", "animated lightSpeedOut")
+				.attr("class", "animated fadeOut")
 				.css("-webkit-animation-duration", "2s")
 				.css("-webkit-animation-delay", "1s");
 		}
@@ -506,7 +506,6 @@ document.addEventListener("DOMContentLoaded", function() {
 				.css("-webkit-animation-duration", "5s")
 				.css("-webkit-animation-delay", "1s")
 				.fadeOut(6000);
-
 			$("#footnote")
 				.fadeOut(6000)
 				.html("")
