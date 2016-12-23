@@ -94,20 +94,20 @@ document.addEventListener("DOMContentLoaded", function() {
 				.attr("src", images["dorothy_selfie_rabbit"])
 				.fadeIn(2000)
 				.attr("class", "animated bounceInDown")
-				.css("-webkit-animation-duration", "4s")
+				.css("-webkit-animation-duration", "2s")
 				.css("-webkit-animation-delay", "5s");
 		},
 		onEnd: function() {
 			$("#left").attr("class", "animated bounceOutLeft")
-				.css("-webkit-animation-duration", "1s")
+				.css("-webkit-animation-duration", "2s")
 				.css("-webkit-animation-delay", "1s")
 				.fadeOut(2000);
 			$("#right").attr("class", "animated bounceOutRight")
-				.css("-webkit-animation-duration", "1s")
+				.css("-webkit-animation-duration", "2s")
 				.css("-webkit-animation-delay", "1s")
 				.fadeOut(2000);
 			$("#middle").attr("class", "animated bounceOutDown")
-				.css("-webkit-animation-duration", "1s")
+				.css("-webkit-animation-duration", "2s")
 				.css("-webkit-animation-delay", "1s")
 				.fadeOut(2000);
 		}
@@ -423,8 +423,7 @@ document.addEventListener("DOMContentLoaded", function() {
 			$("#middle")
 				.attr("class", "animated rotateOut")
 				.css("-webkit-animation-duration", "2s")
-				.css("-webkit-animation-delay", "1s")
-				.fadeOut(3000);
+				.css("-webkit-animation-delay", "1s");
 			$("#left")
 				.attr("class", "animated rotateOutUpLeft")
 				.css("-webkit-animation-duration", "2s")
@@ -465,6 +464,7 @@ document.addEventListener("DOMContentLoaded", function() {
 		start: 182,
 		end: 189,
 		onStart: function () {
+			$("#middle").hide();
 			$("#center")
 				.attr("src", images["together_black_white"])
 				.fadeIn(2000)
