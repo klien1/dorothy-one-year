@@ -98,23 +98,23 @@ document.addEventListener("DOMContentLoaded", function() {
 				.css("-webkit-animation-delay", "5s");
 		},
 		onEnd: function() {
-			$("#left").attr("class", "animated bounceOutLeft")
-				.css("-webkit-animation-duration", "2s")
-				.css("-webkit-animation-delay", "1s")
-				.fadeOut(2000);
-			$("#right").attr("class", "animated bounceOutRight")
-				.css("-webkit-animation-duration", "2s")
-				.css("-webkit-animation-delay", "1s")
-				.fadeOut(2000);
-			$("#middle").attr("class", "animated bounceOutDown")
-				.css("-webkit-animation-duration", "2s")
-				.css("-webkit-animation-delay", "1s")
-				.fadeOut(2000);
+			$("#left").attr("class", "animated fadeOutLeft")
+				.css("-webkit-animation-duration", "3s")
+				.css("-webkit-animation-delay", "1s");
+			$("#right").attr("class", "animated fadeOutRight")
+				.css("-webkit-animation-duration", "3s")
+				.css("-webkit-animation-delay", "1s");
+			$("#middle").attr("class", "animated fadeOutDown")
+				.css("-webkit-animation-duration", "3s")
+				.css("-webkit-animation-delay", "1s");
 		}
 	}).code({//third
 		start: 25,
 		end: 31,
 		onStart: function () {
+			$("#left").fadeOut();
+			$("#right").fadeOut();
+			$("#middle").fadeOut();
 			$("#center").fadeIn(2000).attr("src", images["dorothy_selfie"])
 				.attr("class", "animated rotateIn")
 				.css("-webkit-animation-duration", "2s")
@@ -149,7 +149,7 @@ document.addEventListener("DOMContentLoaded", function() {
 			$("#middle")
 				.attr("class", "animated rollIn")
 				.css("-webkit-animation-duration", "2s")
-				.css("-webkit-animation-delay", "8s")
+				.css("-webkit-animation-delay", "9s")
 				.attr("src", images["judy_hopps"])
 				.fadeIn(4000);
 		},
@@ -264,21 +264,21 @@ document.addEventListener("DOMContentLoaded", function() {
 				.attr("src", images["dorothy_selfie_makeup"])
 				.css("width", "")
 				.css("height", "")
-				.attr("class", "animated fadeInUpBig")
+				.attr("class", "animated fadeInUp")
 				.css("-webkit-animation-duration", "6s")
 				.css("-webkit-animation-delay", "1s");
 			$("#left")
 				.attr("src", images["spicy_noodle"])
 				.css("width", "")
 				.css("height", "")
-				.attr("class", "animated fadeInRightBig")
+				.attr("class", "animated fadeInLeft")
 				.css("-webkit-animation-duration", "6s")
 				.css("-webkit-animation-delay", "7s");
 			$("#right")
 				.attr("src", images["on_couch_faces"])
 				.css("width", "")
 				.css("height", "")
-				.attr("class", "animated fadeInLeftBig")
+				.attr("class", "animated fadeInRight")
 				.css("-webkit-animation-duration", "6s")
 				.css("-webkit-animation-delay", "7s");
 
@@ -319,16 +319,16 @@ document.addEventListener("DOMContentLoaded", function() {
 		},
 		onEnd: function () {
 			$("#middle")
-				.attr("class", "animated hinge")
-				.css("-webkit-animation-duration", "2s")
+				.attr("class", "animated hinge fadeOut")
+				.css("-webkit-animation-duration", "3s")
 				.css("-webkit-animation-delay", "1s");
 			$("#left")
-				.attr("class", "animated hinge")
-				.css("-webkit-animation-duration", "2s")
+				.attr("class", "animated hinge fadeOut")
+				.css("-webkit-animation-duration", "3s")
 				.css("-webkit-animation-delay", "1s");
 			$("#right")
-				.attr("class", "animated hinge")
-				.css("-webkit-animation-duration", "2s")
+				.attr("class", "animated hinge fadeOut")
+				.css("-webkit-animation-duration", "3s")
 				.css("-webkit-animation-delay", "1s");
 		}
 	}).code({//ninth
@@ -401,7 +401,7 @@ document.addEventListener("DOMContentLoaded", function() {
 		}
 	}).code({//eleventh
 		start: 156,
-		end: 171,
+		end: 170,
 		onStart: function () {
 			$("#middle")
 				.attr("src", images["reno_going_home"])
@@ -526,7 +526,7 @@ $(function () {
 	$("#start-button").addClass("animated bounce infinite").on("click", function () {
 		$("#song").attr("src", "songs/bruno_mars-just_the_way_you_are.mp3");
 		document.getElementById("song").play();
-		$(this).fadeOut(1000).delay(216000).fadeIn();
+		$(this).fadeOut(1000).delay(215000).fadeIn();
 	});//end onclick start-button
 
 });//end document.ready
