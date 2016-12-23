@@ -164,7 +164,9 @@ document.addEventListener("DOMContentLoaded", function() {
 				.attr("class", "animated rollOut")
 				.css("-webkit-animation-duration", "2s")
 				.css("-webkit-animation-delay", "1s")
-				.fadeOut(2900);
+				.fadeOut(2900).delay(1000).queue(function () {
+					$(this).attr("src", "");
+				});
 
 			$("#middle")
 				.attr("class", "animated rollOut")
