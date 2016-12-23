@@ -1,0 +1,47 @@
+iframe {
+    width: 1280px;
+    height: 720px;
+    margin: 0 auto;
+    display: block;
+}
+
+#header {
+    background-color: darkred;
+    color: #FFAAAA;
+    margin-bottom: 3em;
+    font-family: 'Lora', serif;
+}
+
+#footnote {
+    font-family: 'Lora', serif;
+    color: darkred;
+}
+
+#start-button {
+    border: solid 2px black;
+    font-size: 300%;
+    -webkit-animation-duration: 3s;
+    margin-top: 5em;
+}
+
+.wrap img {
+    vertical-align: middle;
+}
+
+img {
+    width: 25%;
+    height: 25%;
+    border: solid 1px black;
+}
+
+.wrap {
+    text-align: justify;
+    line-height: 0;
+}
+
+.wrap>span {
+    display: inline-block;
+    width: 100%;
+    font-size: 0;
+    vertical-align: top;
+}
