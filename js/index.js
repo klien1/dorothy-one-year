@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	let popcorn = Popcorn("#song");
 
 	popcorn
-		.volume(.2)
+		.volume(.5)
 		.code({
 		start: 3,
 		end: 14,
