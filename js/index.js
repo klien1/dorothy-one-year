@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function() {
 		.volume(.2)
 		.code({
 		start: 3,
-		end: 15,
+		end: 14,
 		onStart: function () {
 			$("#left")
 				.attr("src", images["valley_fair"])
@@ -73,52 +73,52 @@ document.addEventListener("DOMContentLoaded", function() {
 			$("#right").fadeOut(2000);
 		}
 	}).code({//second
-		start: 17,
-		end: 25,
+		start: 16,
+		end: 24,
 		onStart: function () {
 			$("#right")
 				.attr("src", images["dorothy_selfie_dark_lips"])
 				.fadeIn(2000)
 				.attr("class", "animated bounceInLeft")
 				.css("-webkit-animation-duration", "4s")
-				.css("-webkit-animation-delay", "");
+				.css("-webkit-animation-delay", "1s");
 
 			$("#left")
 				.attr("src", images["dorothy_selfie_no_makeup"])
 				.fadeIn(2000)
 				.attr("class", "animated bounceInRight")
 				.css("-webkit-animation-duration", "4s")
-				.css("-webkit-animation-delay", "1s");
+				.css("-webkit-animation-delay", "2s");
 
 			$("#middle")
 				.attr("src", images["dorothy_selfie_rabbit"])
 				.fadeIn(2000)
 				.attr("class", "animated bounceInDown")
 				.css("-webkit-animation-duration", "4s")
-				.css("-webkit-animation-delay", "4s");
+				.css("-webkit-animation-delay", "5s");
 		},
 		onEnd: function() {
 			$("#left").attr("class", "animated bounceOutLeft")
 				.css("-webkit-animation-duration", "1s")
-				.css("-webkit-animation-delay", "")
-				.fadeOut(900);
+				.css("-webkit-animation-delay", "1s")
+				.fadeOut(1900);
 			$("#right").attr("class", "animated bounceOutRight")
 				.css("-webkit-animation-duration", "1s")
-				.css("-webkit-animation-delay", "")
-				.fadeOut(900);
+				.css("-webkit-animation-delay", "1s")
+				.fadeOut(1900);
 			$("#middle").attr("class", "animated bounceOutDown")
 				.css("-webkit-animation-duration", "1s")
-				.css("-webkit-animation-delay", "")
-				.fadeOut(900);
+				.css("-webkit-animation-delay", "1s")
+				.fadeOut(1900);
 		}
 	}).code({//third
-		start: 26,
-		end: 33,
+		start: 25,
+		end: 32,
 		onStart: function () {
 			$("#center").fadeIn(2000).attr("src", images["dorothy_selfie"])
 				.attr("class", "animated rotateIn")
 				.css("-webkit-animation-duration", "2s")
-				.css("-webkit-animation-delay", "")
+				.css("-webkit-animation-delay", "1s")
 				.css("width", "35%")
 				.css("height", "35%");
 		},
@@ -126,30 +126,30 @@ document.addEventListener("DOMContentLoaded", function() {
 			$("#center")
 				.attr("class", "animated rotateOut")
 				.css("-webkit-animation-duration", "2s")
-				.css("-webkit-animation-delay", "")
-				.fadeOut(2000);
+				.css("-webkit-animation-delay", "1s")
+				.fadeOut(3000);
 		}
 	}).code({//fourth
-		start: 35,
-		end: 49,
+		start: 34,
+		end: 48,
 		onStart: function () {
 			$("#left")
 				.attr("class", "animated rollIn")
 				.css("-webkit-animation-duration", "2s")
-				.css("-webkit-animation-delay", "4s")
+				.css("-webkit-animation-delay", "5s")
 				.attr("src", images["ikes_me"])
 				.fadeIn(4000);
 			$("#right")
 				.attr("class", "animated rollIn")
 				.css("-webkit-animation-duration", "2s")
-				.css("-webkit-animation-delay", "")
+				.css("-webkit-animation-delay", "1s")
 				.attr("src", images["ikes"])
 				.fadeIn(4000);
 
 			$("#middle")
 				.attr("class", "animated rollIn")
 				.css("-webkit-animation-duration", "2s")
-				.css("-webkit-animation-delay", "7s")
+				.css("-webkit-animation-delay", "8s")
 				.attr("src", images["judy_hopps"])
 				.fadeIn(4000);
 		},
@@ -157,33 +157,33 @@ document.addEventListener("DOMContentLoaded", function() {
 			$("#left")
 				.attr("class", "animated rollOut")
 				.css("-webkit-animation-duration", "2s")
-				.css("-webkit-animation-delay", "")
-				.fadeOut(1900);
+				.css("-webkit-animation-delay", "1s")
+				.fadeOut(2900);
 
 			$("#right")
 				.attr("class", "animated rollOut")
 				.css("-webkit-animation-duration", "2s")
-				.css("-webkit-animation-delay", "")
-				.fadeOut(1900);
+				.css("-webkit-animation-delay", "1s")
+				.fadeOut(2900);
 
 			$("#middle")
 				.attr("class", "animated rollOut")
 				.css("-webkit-animation-duration", "2s")
-				.css("-webkit-animation-delay", "")
+				.css("-webkit-animation-delay", "1s")
 				.css("width", "")
 				.css("height", "")
-				.fadeOut(1900);
+				.fadeOut(2900);
 		}
 	}).code({//fifth
-		start: 51,
-		end: 64,
+		start: 50,
+		end: 63,
 		onStart: function () {
 			$("#center")
 				.attr("src", images["happy_on_couch"])
 				.fadeIn(2000)
 				.attr("class", "animated zoomIn")
 				.css("-webkit-animation-duration", "2s")
-				.css("-webkit-animation-delay", "")
+				.css("-webkit-animation-delay", "1s")
 				.delay(2000).queue(function(next) {
 					$(this).attr("class", "animated pulse")
 					.css("-webkit-animation-duration", "8s");
@@ -194,12 +194,12 @@ document.addEventListener("DOMContentLoaded", function() {
 			$("#center")
 				.attr("class", "animated zoomOut")
 				.css("-webkit-animation-duration", "5s")
-				.css("-webkit-animation-delay", "")
-				.fadeOut(5000);
+				.css("-webkit-animation-delay", "1s")
+				.fadeOut(6000);
 		}
 	}).code({//sixth
-		start: 67,
-		end: 82,
+		start: 66,
+		end: 81,
 		onStart: function () {
 			$("#center")
 				.attr("src", images["dorothy_first_dinner"])
@@ -208,7 +208,7 @@ document.addEventListener("DOMContentLoaded", function() {
 				.css("height", "40%")
 				.fadeIn(1000)
 				.css("-webkit-animation-duration", "4s")
-				.css("-webkit-animation-delay", "");
+				.css("-webkit-animation-delay", "1s");
 			$("#left")
 				.attr("src", images["me_smiling_couch"])
 				.css("width", "")
@@ -216,7 +216,7 @@ document.addEventListener("DOMContentLoaded", function() {
 				.fadeIn(2000)
 				.attr("class", "animated zoomInRight")
 				.css("-webkit-animation-duration", "4s")
-				.css("-webkit-animation-delay", "6s");
+				.css("-webkit-animation-delay", "7s");
 			$("#right")
 				.attr("src", images["kevin_fro"])
 				.css("width", "")
@@ -224,7 +224,7 @@ document.addEventListener("DOMContentLoaded", function() {
 				.fadeIn(2000)
 				.attr("class", "animated zoomInRight")
 				.css("-webkit-animation-duration", "4s")
-				.css("-webkit-animation-delay", "6s");
+				.css("-webkit-animation-delay", "7s");
 			$("#middle")
 				.attr("src", images["me_on_floor_at_rachels"])
 				.css("width", "40%")
@@ -232,33 +232,33 @@ document.addEventListener("DOMContentLoaded", function() {
 				.fadeIn(2000)
 				.attr("class", "animated zoomInDown")
 				.css("-webkit-animation-duration", "4s")
-				.css("-webkit-animation-delay", "6s");
+				.css("-webkit-animation-delay", "7s");
 		},
 		onEnd: function () {
 			$("#center")
 				.attr("class", "animated flipOutX")
 				.css("-webkit-animation-duration", "2s")
-				.css("-webkit-animation-delay", "")
-				.fadeOut(2000);
+				.css("-webkit-animation-delay", "1s")
+				.fadeOut(3000);
 			$("#left")
 				.attr("class", "animated flipOutX")
 				.css("-webkit-animation-duration", "2s")
-				.css("-webkit-animation-delay", "")
-				.fadeOut(2000);
+				.css("-webkit-animation-delay", "1s")
+				.fadeOut(3000);
 			$("#right")
 				.attr("class", "animated flipOutX")
 				.css("-webkit-animation-duration", "2s")
-				.css("-webkit-animation-delay", "")
-				.fadeOut(2000);
+				.css("-webkit-animation-delay", "1s")
+				.fadeOut(3000);
 			$("#middle")
 				.attr("class", "animated flipOutX")
 				.css("-webkit-animation-duration", "2s")
-				.css("-webkit-animation-delay", "")
-				.fadeOut(2000);
+				.css("-webkit-animation-delay", "1s")
+				.fadeOut(3000);
 		}
 	}).code({//seventh
-		start: 86,
-		end: 102,
+		start: 85,
+		end: 101,
 		onStart: function () {
 			$("#middle")
 				.attr("src", images["dorothy_selfie_makeup"])
@@ -267,7 +267,7 @@ document.addEventListener("DOMContentLoaded", function() {
 				.fadeIn(2000)
 				.attr("class", "animated fadeInUpBig")
 				.css("-webkit-animation-duration", "6s")
-				.css("-webkit-animation-delay", "");
+				.css("-webkit-animation-delay", "1s");
 			$("#left")
 				.attr("src", images["spicy_noodle"])
 				.css("width", "")
@@ -275,7 +275,7 @@ document.addEventListener("DOMContentLoaded", function() {
 				.fadeIn(2000)
 				.attr("class", "animated fadeInRightBig")
 				.css("-webkit-animation-duration", "6s")
-				.css("-webkit-animation-delay", "6s");
+				.css("-webkit-animation-delay", "7s");
 			$("#right")
 				.attr("src", images["on_couch_faces"])
 				.css("width", "")
@@ -283,109 +283,109 @@ document.addEventListener("DOMContentLoaded", function() {
 				.fadeIn(2000)
 				.attr("class", "animated fadeInLeftBig")
 				.css("-webkit-animation-duration", "6s")
-				.css("-webkit-animation-delay", "6s");
+				.css("-webkit-animation-delay", "7s");
 
 		},
 		onEnd: function () {
 			$("#middle")
 				.attr("class", "animated fadeOutDown")
 				.css("-webkit-animation-duration", "5s")
-				.css("-webkit-animation-delay", "")
-				.fadeOut(2000);
+				.css("-webkit-animation-delay", "1s")
+				.fadeOut(3000);
 			$("#left")
 				.attr("class", "animated fadeOutLeft")
 				.css("-webkit-animation-duration", "5s")
-				.css("-webkit-animation-delay", "")
-				.fadeOut(2000);
+				.css("-webkit-animation-delay", "1s")
+				.fadeOut(3000);
 			$("#right")
 				.attr("class", "animated fadeOutRight")
 				.css("-webkit-animation-duration", "5s")
-				.css("-webkit-animation-delay", "")
-				.fadeOut(2000);
+				.css("-webkit-animation-delay", "1s")
+				.fadeOut(3000);
 		}
 	}).code({//eighth
-		start: 104,
-		end: 120,
+		start: 103,
+		end: 119,
 		onStart: function () {
 			$("#middle")
 				.fadeIn(2000)
 				.attr("src", images["first_date"])
 				.attr("class", "animated bounceInDown")
 				.css("-webkit-animation-duration", "2s")
-				.css("-webkit-animation-delay", "9s");
+				.css("-webkit-animation-delay", "10s");
 			$("#left")
 				.fadeIn(2000)
 				.attr("src", images["first_date_park"])
 				.attr("class", "animated bounceInDown")
 				.css("-webkit-animation-duration", "2s")
-				.css("-webkit-animation-delay", "");
+				.css("-webkit-animation-delay", "1s");
 			$("#right")
 				.fadeIn(2000)
 				.attr("src", images["first_date_park_me"])
 				.attr("class", "animated bounceInDown")
 				.css("-webkit-animation-duration", "2s")
-				.css("-webkit-animation-delay", "5s");
+				.css("-webkit-animation-delay", "6s");
 		},
 		onEnd: function () {
 			$("#middle")
 				.attr("class", "animated hinge")
 				.css("-webkit-animation-duration", "2s")
-				.css("-webkit-animation-delay", "")
-				.fadeOut(2000);
+				.css("-webkit-animation-delay", "1s")
+				.fadeOut(3000);
 			$("#left")
 				.attr("class", "animated hinge")
 				.css("-webkit-animation-duration", "2s")
-				.css("-webkit-animation-delay", "")
-				.fadeOut(2000);
+				.css("-webkit-animation-delay", "1s")
+				.fadeOut(3000);
 			$("#right")
 				.attr("class", "animated hinge")
 				.css("-webkit-animation-duration", "2s")
-				.css("-webkit-animation-delay", "")
-				.fadeOut(2000);
+				.css("-webkit-animation-delay", "1s")
+				.fadeOut(3000);
 		}
 	}).code({//ninth
-		start: 122,
-		end: 136,
+		start: 121,
+		end: 135,
 		onStart: function () {
 			$("#middle")
 				.attr("src", images["reno_snowboard_gear_car"])
 				.fadeIn(2000)
 				.attr("class", "animated flipInY")
 				.css("-webkit-animation-duration", "2s")
-				.css("-webkit-animation-delay", "8s");
+				.css("-webkit-animation-delay", "9s");
 			$("#left")
 				.attr("src", images["reno_trip"])
 				.fadeIn(2000)
 				.attr("class", "animated flipInY")
 				.css("-webkit-animation-duration", "2s")
-				.css("-webkit-animation-delay", "");
+				.css("-webkit-animation-delay", "1s");
 			$("#right")
 				.attr("src", images["reno_mountain"])
 				.fadeIn(2000)
 				.attr("class", "animated flipInY")
 				.css("-webkit-animation-duration", "2s")
-				.css("-webkit-animation-delay", "4s");
+				.css("-webkit-animation-delay", "5s");
 		},
 		onEnd: function () {
 			$("#middle")
 				.attr("class", "animated flipOutY")
 				.css("-webkit-animation-duration", "2s")
-				.css("-webkit-animation-delay", "")
-				.fadeOut(2000);
+				.css("-webkit-animation-delay", "1s")
+				.fadeOut(3000);
 			$("#left")
 				.attr("class", "animated flipOutY")
 				.css("-webkit-animation-duration", "2s")
-				.css("-webkit-animation-delay", "")
-				.fadeOut(2000);
+				.css("-webkit-animation-delay", "1s")
+				.fadeOut(3000);
 			$("#right")
 				.attr("class", "animated flipOutY")
 				.css("-webkit-animation-duration", "2s")
-				.css("-webkit-animation-delay", "")
-				.fadeOut(2000);
+				.css("-webkit-animation-delay", "1s")
+				.fadeOut(3000);
 		}
 	}).code({//tenth
 		start: 138,
-		end: 153,
+		end: 152,
 		onStart: function () {
 			$("#middle")
 				.attr("src", images["kyle_party_smile"])
@@ -410,108 +410,108 @@ document.addEventListener("DOMContentLoaded", function() {
 			$("#middle")
 				.attr("class", "animated lightSpeedOut")
 				.css("-webkit-animation-duration", "2s")
-				.css("-webkit-animation-delay", "")
-				.fadeOut(2000);
+				.css("-webkit-animation-delay", "1s")
+				.fadeOut(3000);
 			$("#left")
 				.attr("class", "animated lightSpeedOut")
 				.css("-webkit-animation-duration", "2s")
-				.css("-webkit-animation-delay", "")
-				.fadeOut(2000);
+				.css("-webkit-animation-delay", "1s")
+				.fadeOut(3000);
 			$("#right")
 				.attr("class", "animated lightSpeedOut")
 				.css("-webkit-animation-duration", "2s")
-				.css("-webkit-animation-delay", "")
-				.fadeOut(2000);
+				.css("-webkit-animation-delay", "1s")
+				.fadeOut(3000);
 		}
 	}).code({//eleventh
-		start: 157,
-		end: 172,
+		start: 156,
+		end: 171,
 		onStart: function () {
 			$("#middle")
 				.attr("src", images["reno_going_home"])
 				.fadeIn(2000)
 				.attr("class", "animated rotateIn")
 				.css("-webkit-animation-duration", "2s")
-				.css("-webkit-animation-delay", "");
+				.css("-webkit-animation-delay", "1s");
 			$("#left")
 				.attr("src", images["me_and_bigbear"])
 				.fadeIn(2000)
 				.attr("class", "animated rotateInUpLeft")
 				.css("-webkit-animation-duration", "2s")
-				.css("-webkit-animation-delay", "5s");
+				.css("-webkit-animation-delay", "6s");
 			$("#right")
 				.attr("src", images["hug_stitch"])
 				.fadeIn(2000)
 				.attr("class", "animated rotateInUpRight")
 				.css("-webkit-animation-duration", "2s")
-				.css("-webkit-animation-delay", "9s");
+				.css("-webkit-animation-delay", "10s");
 		},
 		onEnd: function () {
 			$("#middle")
 				.attr("class", "animated rotateOut")
 				.css("-webkit-animation-duration", "2s")
-				.css("-webkit-animation-delay", "")
-				.fadeOut(2000);
+				.css("-webkit-animation-delay", "1s")
+				.fadeOut(3000);
 			$("#left")
 				.attr("class", "animated rotateOutUpLeft")
 				.css("-webkit-animation-duration", "2s")
-				.css("-webkit-animation-delay", "")
-				.fadeOut(2000);
+				.css("-webkit-animation-delay", "1s")
+				.fadeOut(3000);
 			$("#right")
 				.attr("class", "animated rotateOutUpRight")
 				.css("-webkit-animation-duration", "2s")
-				.css("-webkit-animation-delay", "")
-				.fadeOut(2000);
+				.css("-webkit-animation-delay", "1s")
+				.fadeOut(3000);
 		}
 	}).code({//twelfth
-		start: 174,
-		end: 180,
+		start: 173,
+		end: 179,
 		onStart: function () {
 			$("#left")
 				.attr("src", images["first_haircut_chico"])
 				.fadeIn(2000)
 				.attr("class", "animated rotateInUpLeft")
 				.css("-webkit-animation-duration", "2s")
-				.css("-webkit-animation-delay", "");
+				.css("-webkit-animation-delay", "1s");
 			$("#right")
 				.attr("src", images["dorothy_selfie_kyle"])
 				.fadeIn(2000)
 				.attr("class", "animated rotateInUpRight")
 				.css("-webkit-animation-duration", "2s")
-				.css("-webkit-animation-delay", "");
+				.css("-webkit-animation-delay", "1s");
 		},
 		onEnd: function () {
 			$("#left")
 				.attr("class", "animated slideOutRight")
 				.css("-webkit-animation-duration", "2s")
-				.css("-webkit-animation-delay", "")
-				.fadeOut(2000);
+				.css("-webkit-animation-delay", "1s")
+				.fadeOut(3000);
 			$("#right")
 				.attr("class", "animated slideOutLeft")
 				.css("-webkit-animation-duration", "2s")
-				.css("-webkit-animation-delay", "")
-				.fadeOut(2000);
+				.css("-webkit-animation-delay", "1s")
+				.fadeOut(3000);
 		}
 	}).code({//thirteenth
-		start: 182,
-		end: 190,
+		start: 181,
+		end: 189,
 		onStart: function () {
 			$("#center")
 				.attr("src", images["together_black_white"])
 				.fadeIn(2000)
 				.attr("class", "animated zoomIn")
 				.css("-webkit-animation-duration", "2s")
-				.css("-webkit-animation-delay", "");
+				.css("-webkit-animation-delay", "1s");
 		},
 		onEnd: function () {
 			$("#center")
 				.attr("class", "animated zoomOut")
 				.css("-webkit-animation-duration", "2s")
-				.css("-webkit-animation-delay", "")
-				.fadeOut(2000);
+				.css("-webkit-animation-delay", "1s")
+				.fadeOut(3000);
 		}
 	}).code({//end
-		start: 192,
+		start: 191,
 		end: 205,
 		onStart: function () {
 			$("#center")
@@ -519,28 +519,29 @@ document.addEventListener("DOMContentLoaded", function() {
 				.fadeIn(2000)
 				.attr("class", "animated zoomIn")
 				.css("-webkit-animation-duration", "2s")
-				.css("-webkit-animation-delay", "");
+				.css("-webkit-animation-delay", "1s");
 		},
 		onEnd: function () {}
 	}).code({
-		start: 207,
-		end: 212,
+		start: 206,
+		end: 211,
 		onStart: function () {
 			$("#footnote")
 				.fadeIn(2000)
 				.html("I Love You Dorothy Doan")
 				.attr("class", "text-center animated tada")
-				.css("-webkit-animation-duration", "3s");
+				.css("-webkit-animation-duration", "3s")
+				.css("-webkit-animation-delay", "1s");
 		},
 		onEnd: function () {
 			$("#center")
 				.attr("class", "animated zoomOut")
 				.css("-webkit-animation-duration", "5s")
-				.css("-webkit-animation-delay", "")
-				.fadeOut(5000);
+				.css("-webkit-animation-delay", "1s")
+				.fadeOut(6000);
 
 			$("#footnote")
-				.fadeOut(5000)
+				.fadeOut(6000)
 				.html("")
 				.attr("class", "text-center")
 		}
