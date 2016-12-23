@@ -291,7 +291,11 @@ document.addEventListener("DOMContentLoaded", function() {
 			$("#left")
 				.attr("class", "animated fadeOutRight")
 				.css("-webkit-animation-duration", "2s")
-				.css("-webkit-animation-delay", "1s");
+				.css("-webkit-animation-delay", "1s")
+				.delay(2000).queue(function (next) {
+					$(this).attr("class", "");
+					next();
+				});
 			$("#right")
 				.attr("class", "animated fadeOutLeft")
 				.css("-webkit-animation-duration", "2s")
@@ -525,7 +529,7 @@ $(function () {
 	$("#start-button").addClass("animated bounce infinite").on("click", function () {
 		$("#song").attr("src", "songs/bruno_mars-just_the_way_you_are.mp3");
 		document.getElementById("song").play();
-		$(this).fadeOut(1000).delay(215000).fadeIn();
+		$("#start-button-song").fadeOut(1000).delay(215000).fadeIn();
 	});//end onclick start-button
 
 });//end document.ready
