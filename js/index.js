@@ -128,31 +128,46 @@ document.addEventListener("DOMContentLoaded", function() {
 				.attr("class", "animated rotateOut")
 				.css("-webkit-animation-duration", "2s")
 				.css("-webkit-animation-delay", "1s")
-				.fadeOut(2500);
+				.fadeOut(2000);
 		}
 	}).code({//fourth
-		start: 34,
+		start: 33,
 		end: 47,
 		onStart: function () {
 			$("#left")
 				.attr("class", "animated rollIn")
 				.css("-webkit-animation-duration", "2s")
-				.css("-webkit-animation-delay", "5s")
+				.css("-webkit-animation-delay", "2s")
 				.attr("src", images["ikes_me"])
-				.fadeIn(4000);
+				.fadeIn(4000).delay(6000).queue(function (next) {
+					$(this).attr("class", "animated bounce")
+						.css("-webkit-animation-duration", "")
+						.css("-webkit-animation-delay", "1s");
+					next();
+				});
 			$("#right")
 				.attr("class", "animated rollIn")
 				.css("-webkit-animation-duration", "2s")
 				.css("-webkit-animation-delay", "1s")
 				.attr("src", images["ikes"])
-				.fadeIn(4000);
+				.fadeIn(4000).delay(6000).queue(function (next) {
+				$(this).attr("class", "animated bounce")
+					.css("-webkit-animation-duration", "")
+					.css("-webkit-animation-delay", "3s");
+				next();
+			});
 
 			$("#middle")
 				.attr("class", "animated rollIn")
 				.css("-webkit-animation-duration", "2s")
-				.css("-webkit-animation-delay", "9s")
+				.css("-webkit-animation-delay", "6s")
 				.attr("src", images["judy_hopps"])
-				.fadeIn(4000);
+				.fadeIn(4000).delay(6000).queue(function (next) {
+				$(this).attr("class", "animated bounce")
+					.css("-webkit-animation-duration", "")
+					.css("-webkit-animation-delay", "2s");
+				next();
+			});
 		},
 		onEnd: function () {
 			$("#left")
@@ -292,7 +307,7 @@ document.addEventListener("DOMContentLoaded", function() {
 				.attr("class", "animated fadeOutRight")
 				.css("-webkit-animation-duration", "2s")
 				.css("-webkit-animation-delay", "1s")
-				.delay(3000).queue(function (next) {
+				.delay(2500).queue(function (next) {
 					$(this).attr("src", "");
 					next();
 				});
@@ -442,12 +457,12 @@ document.addEventListener("DOMContentLoaded", function() {
 		end: 179,
 		onStart: function () {
 			$("#left")
-				.attr("src", images["first_haircut_chico"])
+				.attr("src", images["dorothy_selfie_kyle"])
 				.attr("class", "animated rotateInUpLeft")
 				.css("-webkit-animation-duration", "2s")
 				.css("-webkit-animation-delay", "1s");
 			$("#right")
-				.attr("src", images["dorothy_selfie_kyle"])
+				.attr("src", images["first_haircut_chico"])
 				.attr("class", "animated rotateInUpRight")
 				.css("-webkit-animation-duration", "2s")
 				.css("-webkit-animation-delay", "1s");
