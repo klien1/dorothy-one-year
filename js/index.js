@@ -292,7 +292,7 @@ document.addEventListener("DOMContentLoaded", function() {
 				.attr("class", "animated fadeOutRight")
 				.css("-webkit-animation-duration", "2s")
 				.css("-webkit-animation-delay", "1s")
-				.delay(1000).queue(function (next) {
+				.delay(3000).queue(function (next) {
 					$(this).attr("src", "");
 					next();
 				});
