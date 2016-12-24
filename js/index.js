@@ -112,9 +112,9 @@ document.addEventListener("DOMContentLoaded", function() {
 		start: 25,
 		end: 31,
 		onStart: function () {
-			$("#left").fadeOut();
-			$("#right").fadeOut();
-			$("#middle").fadeOut();
+			$("#left").fadeOut().attr("src", "");
+			$("#right").fadeOut().attr("src", "");
+			$("#middle").fadeOut().attr("src", "");
 			$("#center").fadeIn(2000)
 				.attr("src", images["dorothy_selfie"])
 				.attr("class", "animated rotateIn")
@@ -135,10 +135,10 @@ document.addEventListener("DOMContentLoaded", function() {
 		end: 47,
 		onStart: function () {
 			$("#left")
+				.attr("src", images["ikes_me"])
 				.attr("class", "animated rollIn")
 				.css("-webkit-animation-duration", "2s")
 				.css("-webkit-animation-delay", "1s")
-				.attr("src", images["ikes_me"])
 				.fadeIn(4000).delay(5000).queue(function (next) {
 					$(this).attr("class", "animated swing")
 						.css("-webkit-animation-duration", "")
@@ -146,10 +146,10 @@ document.addEventListener("DOMContentLoaded", function() {
 					next();
 				});
 			$("#right")
+				.attr("src", images["ikes"])
 				.attr("class", "animated rollIn")
 				.css("-webkit-animation-duration", "2s")
 				.css("-webkit-animation-delay", "")
-				.attr("src", images["ikes"])
 				.fadeIn(4000).delay(5000).queue(function (next) {
 				$(this).attr("class", "animated bounce infinite")
 					.css("-webkit-animation-duration", "")
@@ -158,10 +158,10 @@ document.addEventListener("DOMContentLoaded", function() {
 			});
 
 			$("#middle")
+				.attr("src", images["judy_hopps"])
 				.attr("class", "animated rollIn")
 				.css("-webkit-animation-duration", "2s")
 				.css("-webkit-animation-delay", "5s")
-				.attr("src", images["judy_hopps"])
 				.fadeIn(4000).delay(5000).queue(function (next) {
 				$(this).attr("class", "animated bounce infinite")
 					.css("-webkit-animation-duration", "")
