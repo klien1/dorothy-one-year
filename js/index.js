@@ -131,16 +131,16 @@ document.addEventListener("DOMContentLoaded", function() {
 				.fadeOut(2000);
 		}
 	}).code({//fourth
-		start: 33,
+		start: 34,
 		end: 47,
 		onStart: function () {
 			$("#left")
 				.attr("class", "animated rollIn")
 				.css("-webkit-animation-duration", "2s")
-				.css("-webkit-animation-delay", "2s")
+				.css("-webkit-animation-delay", "1s")
 				.attr("src", images["ikes_me"])
-				.fadeIn(4000).delay(6000).queue(function (next) {
-					$(this).attr("class", "animated bounce")
+				.fadeIn(4000).delay(5000).queue(function (next) {
+					$(this).attr("class", "animated swing")
 						.css("-webkit-animation-duration", "")
 						.css("-webkit-animation-delay", "1s");
 					next();
@@ -148,22 +148,22 @@ document.addEventListener("DOMContentLoaded", function() {
 			$("#right")
 				.attr("class", "animated rollIn")
 				.css("-webkit-animation-duration", "2s")
-				.css("-webkit-animation-delay", "1s")
+				.css("-webkit-animation-delay", "")
 				.attr("src", images["ikes"])
-				.fadeIn(4000).delay(6000).queue(function (next) {
-				$(this).attr("class", "animated bounce")
+				.fadeIn(4000).delay(5000).queue(function (next) {
+				$(this).attr("class", "animated bounce infinite")
 					.css("-webkit-animation-duration", "")
-					.css("-webkit-animation-delay", "3s");
+					.css("-webkit-animation-delay", "2s");
 				next();
 			});
 
 			$("#middle")
 				.attr("class", "animated rollIn")
 				.css("-webkit-animation-duration", "2s")
-				.css("-webkit-animation-delay", "6s")
+				.css("-webkit-animation-delay", "5s")
 				.attr("src", images["judy_hopps"])
-				.fadeIn(4000).delay(6000).queue(function (next) {
-				$(this).attr("class", "animated bounce")
+				.fadeIn(4000).delay(5000).queue(function (next) {
+				$(this).attr("class", "animated bounce infinite")
 					.css("-webkit-animation-duration", "")
 					.css("-webkit-animation-delay", "2s");
 				next();
