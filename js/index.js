@@ -112,9 +112,9 @@ document.addEventListener("DOMContentLoaded", function() {
 		start: 25,
 		end: 31,
 		onStart: function () {
-			$("#left").fadeOut().attr("src", "");
-			$("#right").fadeOut().attr("src", "");
-			$("#middle").fadeOut().attr("src", "");
+			$("#left").fadeOut();
+			$("#right").fadeOut();
+			$("#middle").fadeOut();
 			$("#center").fadeIn(2000)
 				.attr("src", images["dorothy_selfie"])
 				.attr("class", "animated rotateIn")
