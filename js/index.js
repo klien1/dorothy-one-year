@@ -79,14 +79,14 @@ document.addEventListener("DOMContentLoaded", function() {
 			$("#right")
 				.attr("src", images["dorothy_selfie_dark_lips"])
 				.fadeIn(2000)
-				.attr("class", "animated bounceInUp")
+				.attr("class", "animated bounceInLeft")
 				.css("-webkit-animation-duration", "4s")
 				.css("-webkit-animation-delay", "1s");
 
 			$("#left")
 				.attr("src", images["dorothy_selfie_no_makeup"])
 				.fadeIn(2000)
-				.attr("class", "animated bounceInUp")
+				.attr("class", "animated bounceInRight")
 				.css("-webkit-animation-duration", "4s")
 				.css("-webkit-animation-delay", "2s");
 
@@ -98,10 +98,10 @@ document.addEventListener("DOMContentLoaded", function() {
 				.css("-webkit-animation-delay", "5s");
 		},
 		onEnd: function() {
-			$("#left").attr("class", "animated fadeOutUp")
+			$("#left").attr("class", "animated fadeOutLeft")
 				.css("-webkit-animation-duration", "3s")
 				.css("-webkit-animation-delay", "1s");
-			$("#right").attr("class", "animated fadeOutUp")
+			$("#right").attr("class", "animated fadeOutRight")
 				.css("-webkit-animation-duration", "3s")
 				.css("-webkit-animation-delay", "1s");
 			$("#middle").attr("class", "animated fadeOutDown")
@@ -267,7 +267,7 @@ document.addEventListener("DOMContentLoaded", function() {
 				.css("height", "")
 				.attr("class", "animated fadeInUp")
 				.css("-webkit-animation-duration", "6s")
-				.css("-webkit-animation-delay", "1s");
+				.css("-webkit-animation-delay", "2s");
 			$("#left")
 				.attr("src", images["spicy_noodle"])
 				.css("width", "")
@@ -292,8 +292,8 @@ document.addEventListener("DOMContentLoaded", function() {
 				.attr("class", "animated fadeOutRight")
 				.css("-webkit-animation-duration", "2s")
 				.css("-webkit-animation-delay", "1s")
-				.delay(2000).queue(function (next) {
-					$(this).attr("class", "");
+				.delay(1000).queue(function (next) {
+					$(this).attr("src", "");
 					next();
 				});
 			$("#right")
