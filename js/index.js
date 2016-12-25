@@ -1,5 +1,6 @@
 "use strict";
 let images = {
+	"audrey_bday": "img/audrey-bday.jpg",
 	"christmas_shopping_scarf": "img/christmas-shopping-scarf.jpg",
 	"dorothy_first_dinner": "img/dorothy-first-dinner.jpg",
 	"dorothy_selfie": "img/dorothy-selfie.jpg",
@@ -29,11 +30,11 @@ let images = {
 	"reno_trip": "img/reno-trip.jpg",
 	"spicy_noodle": "img/spicy-noodle.jpg",
 	"together_black_white": "img/together-black-white.jpg",
-	"together_kiss_blackwhite": "img/together-kiss-blackwhite.jpg",
 	"together_twin_tahoe": "img/together-twin-tahoe.jpg",
 	"valley_fair": "img/valley-fair.jpg",
 	"wedding_didi": "img/wedding-didi.jpg",
-	"wedding_me": "img/wedding-me.jpg"
+	"wedding_me": "img/wedding-me.jpg",
+	"wedding_together_hotel": "img/wedding-together-hotel.jpg"
 };
 
 
@@ -257,8 +258,8 @@ document.addEventListener("DOMContentLoaded", function() {
 			$("#center")
 				.attr("class", "animated flipOutX")
 				.css("-webkit-animation-duration", "2s")
-				.css("-webkit-animation-delay", "1s")
-				.fadeOut(3000);
+				.css("-webkit-animation-delay", "1s");
+				// .fadeOut(3000);
 			$("#left")
 				.attr("class", "animated flipOutX")
 				.css("-webkit-animation-duration", "2s")
@@ -297,10 +298,21 @@ document.addEventListener("DOMContentLoaded", function() {
 				.attr("class", "animated fadeInLeft")
 				.css("-webkit-animation-duration", "6s")
 				.css("-webkit-animation-delay", "7s");
+			$("#center")
+				.attr("src", images["wedding_together_hotel"])
+				.css("width", "")
+				.css("height", "")
+				.attr("class", "animated fadeInDown")
+				.css("margin-top", "2em")
+				.css("-webkit-animation-duration", "6s")
+				.css("-webkit-animation-delay", "7s");
+
+
+
 		},
 		onEnd: function () {
 			$("#middle")
-				.attr("class", "animated fadeOutDown")
+				.attr("class", "animated fadeOut")
 				.css("-webkit-animation-duration", "2s")
 				.css("-webkit-animation-delay", "1s");
 			$("#left")
@@ -315,6 +327,14 @@ document.addEventListener("DOMContentLoaded", function() {
 				.attr("class", "animated fadeOutLeft")
 				.css("-webkit-animation-duration", "2s")
 				.css("-webkit-animation-delay", "1s");
+			$("#center")
+				.attr("class", "animated fadeOutUp")
+				.css("-webkit-animation-duration", "2s")
+				.css("-webkit-animation-delay", "1s")
+				.fadeOut(3000).queue(function (next) {
+					$(this).css("margin-top", "");
+					next();
+				});
 		}
 	}).code({//eighth
 		start: 103,
@@ -485,7 +505,7 @@ document.addEventListener("DOMContentLoaded", function() {
 		onStart: function () {
 			$("#middle").hide();
 			$("#center")
-				.attr("src", images["together_black_white"])
+				.attr("src", images["audrey_bday"])
 				.fadeIn(2000)
 				.attr("class", "animated zoomIn")
 				.css("-webkit-animation-duration", "2s")
@@ -502,7 +522,7 @@ document.addEventListener("DOMContentLoaded", function() {
 		end: 205,
 		onStart: function () {
 			$("#center")
-				.attr("src", images["together_kiss_blackwhite"])
+				.attr("src", images["together_black_white"])
 				.attr("class", "animated zoomIn")
 				.css("-webkit-animation-duration", "2s")
 				.css("-webkit-animation-delay", "1s");
