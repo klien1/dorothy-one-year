@@ -491,27 +491,27 @@ document.addEventListener("DOMContentLoaded", function() {
 		},
 		onEnd: function () {
 			$("#left")
-				.attr("class", "animated slideOutRight")
+				.attr("class", "animated fadeOutRight")
 				.css("-webkit-animation-duration", "2s")
-				.css("-webkit-animation-delay", "1s")
-				.fadeOut(3000);
+				.css("-webkit-animation-delay", "1s");
 			$("#right")
-				.attr("class", "animated slideOutLeft")
+				.attr("class", "animated fadeOutLeft")
 				.css("-webkit-animation-duration", "2s")
-				.css("-webkit-animation-delay", "1s")
-				.fadeOut(3000);
+				.css("-webkit-animation-delay", "1s");
 		}
 	}).code({//thirteenth
 		start: 182,
 		end: 189,
 		onStart: function () {
 			$("#middle").hide();
+			$("#left").hide();
+			$("#right").hide();
 			$("#center")
 				.attr("src", images["audrey_bday"])
 				.fadeIn(2000)
 				.attr("class", "animated zoomIn")
-				.css("width", "50%")
-				.css("height", "50%")
+				.css("width", "40%")
+				.css("height", "40%")
 				.css("-webkit-animation-duration", "2s")
 				.css("-webkit-animation-delay", "1s");
 		},
