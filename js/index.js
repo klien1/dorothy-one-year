@@ -113,8 +113,11 @@ document.addEventListener("DOMContentLoaded", function() {
 		start: 25,
 		end: 31,
 		onStart: function () {
+			$("#right").fadeOut().delay(3000).queue(function (next) {
+				$(this).attr("src", "");
+				next();
+			});
 			$("#left").fadeOut();
-			$("#right").fadeOut();
 			$("#middle").fadeOut();
 			$("#center").fadeIn(2000)
 				.attr("src", images["dorothy_selfie"])
@@ -259,7 +262,6 @@ document.addEventListener("DOMContentLoaded", function() {
 				.attr("class", "animated flipOutX")
 				.css("-webkit-animation-duration", "2s")
 				.css("-webkit-animation-delay", "1s");
-				// .fadeOut(3000);
 			$("#left")
 				.attr("class", "animated flipOutX")
 				.css("-webkit-animation-duration", "2s")
@@ -508,6 +510,8 @@ document.addEventListener("DOMContentLoaded", function() {
 				.attr("src", images["audrey_bday"])
 				.fadeIn(2000)
 				.attr("class", "animated zoomIn")
+				.css("width", "50%")
+				.css("height", "50%")
 				.css("-webkit-animation-duration", "2s")
 				.css("-webkit-animation-delay", "1s");
 		},
